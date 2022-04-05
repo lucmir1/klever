@@ -1,0 +1,128 @@
+main {
+    width: 40%;
+    margin: 0 auto;
+}
+
+header {
+    width: 50%;
+    margin: 0 auto;
+}
+
+body {
+    color: white !important;
+    background-color: #13162a;
+    font-family: "Roboto Slab", serif !important;
+}
+
+.img-star {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(31%) saturate(4977%) hue-rotate(324deg) brightness(114%) contrast(106%);
+    width: 10%;
+}
+/* https://angel-rs.github.io/css-color-filter-generator/ */
+
+.logo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.edit-btn img {
+    width: 16px;
+    cursor: pointer;
+    filter: invert(100%);
+    margin-right: 5px;
+}
+
+.data-list p {
+    width: calc(100% - 24px);
+    font-size: x-large;
+}
+
+.data-list p::after {
+    clear: both;
+}
+
+.data-list .balance {
+    float: right;
+    font-size: x-large;
+}
+
+.header {
+    padding-top: 4em;
+}
+
+#small {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#htokens, #hbalance {
+    margin: 0;
+    font-size: x-large;
+    display: inline;
+}
+
+#hbalance, .btn-main, .btn-right {
+    float: right;
+}
+
+#hbalance::after, .btn-main::after, .btn-right::after {
+    clear: both;
+}
+
+#hwallet {
+    font-size: xx-large;
+    margin: 0;
+}
+.subtitle {
+    width: 75%;
+    display: inline-block;
+}
+
+.btn-gray { 
+    background-color: gray;
+    color: white;
+}
+
+.btn-add { 
+    background-color: rgb(170, 0, 170);
+}
+
+button, .edit input[type="button"] {
+    border-radius: 7px;
+    border: 0;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.edit input[type="text"] {
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    background-color: white;
+    color: black;
+    font-size: large;
+    margin-bottom: 1em;
+}
+
+
+.edit input[name="save"] {
+    float: right;
+    background-color: rgb(170, 0, 170);
+    color: white;
+}
+
+.edit input[name="remove"] {
+    background-color: rgb(150, 0, 0);
+    color: white;
+}

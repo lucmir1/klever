@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syles.css">
+    <!-- Fonte do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet"/>
+    <script src="script.js"></script>
+    <title>Add Token</title>
+</head>
+<body>
+<header>
+    <img class="logo" src='assets/logo.svg' alt="Logo">
+</header>
+<main>
+    <img class="img-star d-inline-block" src="assets/shooting-star.svg" alt="star">
+    <h2 class="d-inline-block" id="hwallet">Wish Wallet</h2>
+    <div id="small">
+        <h3 class="subtitle">Add token</h3>
+        <button onclick="sendToIndex()" class="add-btn btn-gray btn-right" name="Voltar">Voltar</button>
+        <form class="edit">
+            <label for="AddToken">Token</label><br>
+            <input required type="text" id="Token" name="AddToken"><br>
+            <label for="AddBalance"> Balance</label><br>
+            <input required type="text" id="Balance" name="AddBalance"><br>
+
+            <input type="button" onclick="saveNewToken()" name="save" value="Save">
+        </form>
+    </div>
+</main>
+<body> 
+    
+</body>
+</html>

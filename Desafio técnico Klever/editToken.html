@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syles.css">
+    <!-- Fonte do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet"/>
+    <script src="script.js"></script>
+    <title>Edit Token</title>
+</head>
+<body onload="loadEditPage()">
+<header>
+    <img onclick="sendToIndex()" class="logo" src='assets/logo.svg' alt="Logo">
+</header>
+<main>
+    <img class="img-star d-inline-block" src="assets/shooting-star.svg" alt="star">
+    <h2 class="d-inline-block">Wish Wallet</h2>
+    <div id="small">
+        <h3 class="subtitle">Edit token</h3>
+        <button class="btn-main btn-gray" onclick="sendToIndex()">Voltar</button>
+        <form class="edit">
+            <input type="hidden" id="OldToken" value="">
+            <label for="EditToken"> Token</label><br>
+            <input type="text" id="Token" name="EditToken"><br>
+            <label for="EditBalance"> Balance</label><br>
+            <input type="text" id="Balance" name="EditBalance"><br>
+            <input type="button" onclick="handleRemove()" name="remove" value="Remove">
+            <input type="button" onclick="handleEdit()" name="save" value="Save">
+        </form>
+    </div>
+</main>
+</body>
+</html>
